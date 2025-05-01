@@ -31,7 +31,7 @@ from helper import *
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.enums import ParseMode 
-from down1 import *
+#from down1 import *
 from config import *
 
 # watermark_text = ""
