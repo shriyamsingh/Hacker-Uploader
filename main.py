@@ -87,17 +87,6 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["txt"]))
 async def account_login(bot: Client, m: Message):
-
-
-    # 🔐 Step 1: Check if bot is authorized for this owner
-    if not is_bot_token_authorized_for_owner(bot_token_check, owner_id):
-        await m.reply_text(
-            "🚫 **Unauthorized Bot!**\n"
-            "You are not allowed to use this feature due to your bad behavior.\n"
-            "Please contact the admin for more info."
-        )
-        return
-
     editable = await m.reply_text(
                         "📂✨ **Please Send Your TXT File for Download** ✨📂\n"
                         "📌 Only `.txt` files are supported.\n"
